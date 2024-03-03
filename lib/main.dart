@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:project_mercury/database/expense_database.dart';
 import 'package:project_mercury/pages/homepage.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  //* initialize db
+  await ExpenseDatabse.initialize();
+
   runApp(const MyApp());
 }
 
