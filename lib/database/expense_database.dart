@@ -24,6 +24,7 @@ class ExpenseDatabse extends ChangeNotifier {
 
   */
 
+  List<Expense> get allExpenses => _allExpenses;
 
   /*
 
